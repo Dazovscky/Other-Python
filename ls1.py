@@ -18,5 +18,5 @@ c = {}
 for s in users:
     num2 = s['phone'][-1]
     if num2 == '8':
-        c = s
-        print(c)
+        c.update(s)
+        print(c['name'], end=' ')
